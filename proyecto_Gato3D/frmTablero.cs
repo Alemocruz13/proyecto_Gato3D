@@ -1,15 +1,12 @@
 namespace proyecto_Gato3D
 {
-    public partial class Form1 : Form
+    public partial class frmTablero : Form
     {
         int turno = 0;
-        public Form1()
+        public frmTablero()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.Size = new Size(1050, 1050);
-            this.BackColor = Color.Black;
-            this.Text = "Gato 3D";
 
             for (int i = 0; i < 3; i++)
             {
@@ -33,12 +30,14 @@ namespace proyecto_Gato3D
                     panel.Controls.Add(btn);
                 }
             }
+
+            this.FormClosing += new FormClosingEventHandler(this.frmTablero_FormClosing);
         }
 
         private void Btn_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            if (turno == 0 && btn.Text=="" && btn.Name !="p1btn4")
+            if (turno == 0 && btn.Text == "" && btn.Name != "p1btn4")
             {
                 btn.Text = "O";
                 turno = 1;
@@ -48,6 +47,23 @@ namespace proyecto_Gato3D
                 btn.Text = "X";
                 turno = 0;
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void bntMenu_Click(object sender, EventArgs e)
+        {
+            Form menu = new frmMenu();
+            menu.Show();
+            this.Close();
+        }
+
+        private void frmTablero_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
