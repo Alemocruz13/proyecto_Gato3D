@@ -29,7 +29,11 @@ El juego expande el clásico **Tic-Tac-Toe** (Gato) a un entorno tridimensional,
 - Se debe incluir documentación con explicaciones y conclusiones individuales.
 
 ## 👥 Equipo
-Incluye aquí los nombres de los integrantes del equipo.
+Alexis Moreno Cruz
+Karol Antonio Perea Reyes
+Luis David Villalobos Cuellar
+Diego Moreno Diaz de Leon
+Angel Josue Muñoz
 
 ## 📜 Licencia
 Este proyecto es de uso académico y no cuenta con una licencia específica.
