@@ -21,14 +21,14 @@ namespace proyecto_Gato3D
 
         private void bntUvU_Click(object sender, EventArgs e)
         {
-            Form tablero = new frmTablero();
+            Form tablero = new frmTablero(false);
             tablero.Show();
             this.Hide();
         }
 
         private void btnUvC_Click(object sender, EventArgs e)
         {
-            Form tablero = new frmTablero();
+            Form tablero = new frmTablero(true);
             tablero.Show();
             this.Hide();
         }
